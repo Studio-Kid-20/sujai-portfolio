@@ -1,0 +1,266 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Manrope:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#232341",
+                    "on-secondary": "#48001c",
+                    "on-error-container": "#ffb2b9",
+                    "on-tertiary-fixed": "#003840",
+                    "secondary-dim": "#ff6c95",
+                    "primary-dim": "#7e51ff",
+                    "on-secondary-fixed": "#6d002e",
+                    "outline-variant": "#46465e",
+                    "on-secondary-fixed-variant": "#a20048",
+                    "tertiary": "#81ecff",
+                    "on-surface": "#e5e3ff",
+                    "on-primary": "#340090",
+                    "surface-container-high": "#1d1d39",
+                    "tertiary-dim": "#00d4ec",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-container": "#004d57",
+                    "outline": "#74738d",
+                    "on-surface-variant": "#aaa8c4",
+                    "primary-container": "#a98fff",
+                    "secondary-container": "#bb0054",
+                    "on-tertiary-fixed-variant": "#005762",
+                    "surface-container-highest": "#232341",
+                    "primary-fixed": "#a98fff",
+                    "surface": "#0c0c21",
+                    "on-secondary-container": "#fff5f6",
+                    "tertiary-container": "#00e3fd",
+                    "secondary-fixed-dim": "#ffadbe",
+                    "background": "#0c0c21",
+                    "inverse-primary": "#6834eb",
+                    "surface-container": "#171730",
+                    "surface-tint": "#b6a0ff",
+                    "on-tertiary": "#005762",
+                    "inverse-on-surface": "#53536b",
+                    "surface-container-lowest": "#000000",
+                    "on-primary-container": "#280072",
+                    "on-background": "#e5e3ff",
+                    "secondary": "#ff6c95",
+                    "surface-dim": "#0c0c21",
+                    "inverse-surface": "#fcf8ff",
+                    "error-dim": "#d73357",
+                    "error": "#ff6e84",
+                    "primary": "#b6a0ff",
+                    "error-container": "#a70138",
+                    "on-error": "#490013",
+                    "primary-fixed-dim": "#9c7eff",
+                    "surface-bright": "#29294a",
+                    "secondary-fixed": "#ffc2cd",
+                    "surface-container-low": "#111128",
+                    "tertiary-fixed": "#00e3fd",
+                    "on-primary-fixed-variant": "#32008a",
+                    "tertiary-fixed-dim": "#00d4ec"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Inter"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<!-- TopNavBar Navigation Shell -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 bg-indigo-950/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0px_20px_40px_rgba(182,160,255,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 w-full">
+<div class="text-2xl font-bold bg-gradient-to-r from-[#b6a0ff] to-[#ff6c95] bg-clip-text text-transparent font-headline tracking-tighter" style="">
+                LUMINAL
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Plus_Jakarta_Sans'] tracking-tight">
+<a class="text-white border-b-2 border-violet-400 pb-1" href="#" style="">Home</a>
+<a class="text-slate-400 hover:text-violet-200 transition-colors" href="#" style="">About</a>
+<a class="text-slate-400 hover:text-violet-200 transition-colors" href="#" style="">Skills</a>
+<a class="text-slate-400 hover:text-violet-200 transition-colors" href="#" style="">Projects</a>
+<a class="text-slate-400 hover:text-violet-200 transition-colors" href="#" style="">Designs</a>
+<a class="text-slate-400 hover:text-violet-200 transition-colors" href="#" style="">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-violet-300 hover:bg-white/5 rounded-lg transition-all duration-300 scale-95 active:scale-90" style="">
+<span class="material-symbols-outlined" data-icon="dark_mode" style="">dark_mode</span>
+</button>
+<button class="px-5 py-2 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20" style="">
+                    Hire Me
+                </button>
+</div>
+</div>
+</nav>
+<main class="relative min-h-screen overflow-hidden">
+<!-- Hero Background Canvas -->
+<div class="absolute inset-0 z-0">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-secondary/20 rounded-full blur-[120px]"></div>
+<div class="absolute top-[20%] right-[10%] w-[30%] h-[30%] bg-tertiary/10 rounded-full blur-[100px]"></div>
+</div>
+<!-- Hero Section -->
+<section class="relative z-10 pt-32 pb-20 px-8 max-w-7xl mx-auto min-h-screen flex flex-col justify-center">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Hero Content -->
+<div class="lg:col-span-7 space-y-8">
+<div class="space-y-4">
+<span class="inline-block px-4 py-1.5 rounded-full bg-surface-variant/50 text-tertiary font-label text-xs uppercase tracking-widest border border-white/5" style="">
+                            Available for new opportunities
+                        </span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter leading-[1.1] text-white" style="">
+                            Hi, I’m <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary-dim to-secondary" style="">Alex Luminal</span>, a Frontend Developer &amp; UI Designer.
+                        </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-body max-w-2xl leading-relaxed" style="">
+                            Crafting user-friendly, modern web experiences with code and creativity.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="group relative px-8 py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(182,160,255,0.4)] scale-100 active:scale-95" style="">
+                            View My Work
+                        </button>
+<button class="px-8 py-4 bg-surface-variant/20 border border-outline-variant/30 text-white font-bold rounded-xl hover:bg-surface-variant/40 transition-all duration-300 backdrop-blur-sm" style="">
+                            Contact Me
+                        </button>
+</div>
+<!-- Tech Stack Chips -->
+<div class="pt-12 flex flex-wrap gap-3">
+<span class="px-4 py-2 rounded-lg bg-surface-bright text-on-surface-variant text-sm font-label hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 cursor-default" style="">React.js</span>
+<span class="px-4 py-2 rounded-lg bg-surface-bright text-on-surface-variant text-sm font-label hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 cursor-default" style="">Tailwind CSS</span>
+<span class="px-4 py-2 rounded-lg bg-surface-bright text-on-surface-variant text-sm font-label hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 cursor-default" style="">Figma</span>
+<span class="px-4 py-2 rounded-lg bg-surface-bright text-on-surface-variant text-sm font-label hover:bg-tertiary hover:text-on-tertiary transition-all duration-300 cursor-default" style="">TypeScript</span>
+</div>
+</div>
+<!-- Hero Visual (Asymmetric Abstract) -->
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-square flex items-center justify-center">
+<!-- Decorative Shapes -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] blur-2xl opacity-50"></div>
+<!-- Floating Card (Glassmorphism) -->
+<div class="z-20 w-4/5 aspect-[4/5] glass-panel bg-white/5 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden flex flex-col p-6">
+<div class="w-full h-48 rounded-2xl bg-gradient-to-tr from-surface-container-high to-surface-variant overflow-hidden mb-6">
+<img alt="Abstract 3D rendering" class="w-full h-full object-cover mix-blend-overlay opacity-80" data-alt="Modern abstract 3D iridescent floating spheres and glass ribbons in a deep purple and neon pink environment with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2ESCwc5J-KYbTiBfrASR9iNiH4B_nORsdaMy3Gu0CPtVd9kdomH-xiM2aP-qmwP27p-yffdrdeQXZQgTZL7yKLCKrhrze47vOY1r7q7amWgnjeMiUiLfSoZuLIysTZeU8Iod6Euu9RatEMLMFGMjgPeMOjwEqVCDVCkHB3d27qnVkO7d-5MxOyGALlHxUVTT72MsQ6CEWjY0P0Ny9GmIzW3pwDBOVDqznk4XjqaDvU8asBEVODwsw2R16r9d945BWfCwgdU3Imw" style="">
+</div>
+<div class="space-y-3">
+<div class="h-2 w-2/3 bg-primary/40 rounded-full"></div>
+<div class="h-2 w-full bg-white/10 rounded-full"></div>
+<div class="h-2 w-full bg-white/10 rounded-full"></div>
+<div class="h-2 w-4/5 bg-white/10 rounded-full"></div>
+</div>
+<div class="mt-auto flex justify-between items-center">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-primary-container border-2 border-surface-container"></div>
+<div class="w-8 h-8 rounded-full bg-secondary-container border-2 border-surface-container"></div>
+<div class="w-8 h-8 rounded-full bg-tertiary-container border-2 border-surface-container"></div>
+</div>
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm" data-icon="bolt" style="">bolt</span>
+</div>
+</div>
+</div>
+<!-- Floating Accent -->
+<div class="absolute top-[-20px] right-[-10px] z-30 p-4 glass-panel bg-secondary/20 rounded-2xl border border-white/20 shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="brush" style="">brush</span>
+</div>
+<div>
+<p class="text-[10px] font-label text-on-surface-variant uppercase tracking-wider" style="">Design Focus</p>
+<p class="text-sm font-headline font-bold text-white" style="">Visual Identity</p>
+</div>
+</div>
+<div class="absolute bottom-[-30px] left-[-20px] z-30 p-4 glass-panel bg-tertiary/20 rounded-2xl border border-white/20 shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary" data-icon="code" style="">code</span>
+</div>
+<div>
+<p class="text-[10px] font-label text-on-surface-variant uppercase tracking-wider" style="">Dev Focus</p>
+<p class="text-sm font-headline font-bold text-white" style="">Clean Architecture</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Content Sections Spacer -->
+<div class="w-full py-12 px-8">
+<div class="bg-gradient-to-r from-[#b6a0ff]/20 via-[#ff6c95]/20 to-transparent h-[1px]"></div>
+</div>
+<!-- Footer -->
+<footer class="relative w-full pt-20 pb-10 border-t border-white/5 bg-[#0c0c21] overflow-hidden">
+<!-- Background Gradient Mask -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#111128] pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1 space-y-6">
+<div class="text-xl font-black text-white font-headline" style="">LUMINAL CANVAS</div>
+<p class="text-slate-500 font-body text-sm leading-relaxed" style="">
+                    Crafting immersive digital experiences through precision engineering and artistic design.
+                </p>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-tertiary/10 border border-tertiary/20 text-tertiary text-[10px] font-bold uppercase tracking-widest" style="">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+                    Available for Work
+                </div>
+</div>
+<div class="md:col-span-1 space-y-4">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest font-headline" style="">Navigation</h4>
+<div class="flex flex-col space-y-2">
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter']" href="#" style="">Home</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter']" href="#" style="">About</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter']" href="#" style="">Skills</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter']" href="#" style="">Projects</a>
+</div>
+</div>
+<div class="md:col-span-1 space-y-4">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest font-headline" style="">Connect</h4>
+<div class="flex flex-col space-y-2">
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter'] flex items-center gap-2 group" href="#" style="">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform" data-icon="link" style="">link</span> GitHub
+                    </a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter'] flex items-center gap-2 group" href="#" style="">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform" data-icon="share" style="">share</span> LinkedIn
+                    </a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter'] flex items-center gap-2 group" href="#" style="">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform" data-icon="palette" style="">palette</span> Dribbble
+                    </a>
+</div>
+</div>
+<div class="md:col-span-1 space-y-4">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest font-headline" style="">Legal</h4>
+<div class="flex flex-col space-y-2">
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter']" href="#" style="">Privacy Policy</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm font-['Inter']" href="#" style="">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 font-['Inter'] text-sm tracking-wide" style="">
+                © 2024 Luminal Canvas. Built with React &amp; Tailwind.
+            </p>
+<div class="flex items-center gap-6">
+<button class="text-violet-400 hover:text-cyan-400 transition-colors text-sm translate-y-[-2px] transition-transform" style="">Back to Top</button>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,18 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import App from "./App";
+import "./index.css";
+
+const root = document.getElementById("root");
+if (!root) throw new Error("Root element #root not found");
+
+if (typeof window !== "undefined") {
+  document.documentElement.classList.add("dark");
+}
+
+createRoot(root).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
