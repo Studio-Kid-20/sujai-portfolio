@@ -5,14 +5,8 @@ type MaterialIconProps = {
 };
 
 export function MaterialIcon({ name, className = "", label }: MaterialIconProps) {
-  return (
-    <span
-      className={`material-symbols-outlined ${className}`.trim()}
-      aria-hidden={label ? undefined : true}
-      role={label ? "img" : undefined}
-      aria-label={label}
-    >
-      {name}
-    </span>
-  );
+  void name;
+  void className;
+  void label;
+  return null;
 }
