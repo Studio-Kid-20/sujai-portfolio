@@ -109,6 +109,24 @@ function renderEmail(data: {
   };
 }
 
+function extractErrorMessage(text: string) {
+  if (!text) return "";
+
+  try {
+    const parsed = JSON.parse(text) as { message?: unknown; error?: unknown };
+    if (typeof parsed.message === "string" && parsed.message.trim()) {
+      return parsed.message.trim();
+    }
+    if (typeof parsed.error === "string" && parsed.error.trim()) {
+      return parsed.error.trim();
+    }
+  } catch {
+    // Fall through to raw text.
+  }
+
+  return text.trim();
+}
+
 export default async function handler(req: ApiRequest, res: ApiResponse) {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
@@ -157,14 +175,19 @@ export default async function handler(req: ApiRequest, res: ApiResponse) {
       subject: payload.subject,
       html: payload.html,
       text: payload.text,
-      reply_to: formData.email,
+      headers: {
+        "Reply-To": formData.email,
+      },
     }),
   });
 
   if (!response.ok) {
     const errorText = await response.text().catch(() => "");
+    const message = extractErrorMessage(errorText);
     res.status(502).json({
-      message: errorText || "We could not send the email right now. Please try again later.",
+      message:
+        message ||
+        "We could not send the email right now. Please try again later or check your Resend domain and API key settings.",
     });
     return;
   }
