@@ -7,7 +7,7 @@ export type ContactSubmitResult =
 /**
  * POST JSON to your serverless contact endpoint.
  * Set VITE_CONTACT_API_URL in .env (e.g. https://api.example.com/contact).
- * See docs/DEPLOY.md for hosting patterns.
+ * See docs/deployment.md for hosting patterns.
  */
 export async function submitContactForm(data: ContactFormValues): Promise<ContactSubmitResult> {
   const url = import.meta.env.VITE_CONTACT_API_URL;
@@ -15,7 +15,7 @@ export async function submitContactForm(data: ContactFormValues): Promise<Contac
     return {
       ok: false,
       message:
-        "Contact endpoint is not configured. Set VITE_CONTACT_API_URL or use a form service — see docs/DEPLOY.md.",
+        "Contact endpoint is not configured. Set VITE_CONTACT_API_URL or use a form service — see docs/deployment.md.",
     };
   }
 
