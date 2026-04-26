@@ -12,7 +12,8 @@ export function HomePage() {
     <main className="relative min-h-[calc(100vh-6rem)]">
       <HeroUpgraded />
 
-      <section className="mx-auto max-w-7xl px-8 py-24 space-y-32">
+      <section className="mx-auto max-w-7xl px-8 py-16 space-y-16">
+
         <Reveal>
           <div className="space-y-4 mb-16 text-center md:text-left">
             <h2 className="font-headline text-4xl font-bold text-white md:text-6xl">Skills Arsenal</h2>
