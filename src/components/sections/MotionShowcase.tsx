@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Reveal } from "@/components/ui/Reveal";
 
 export const MotionShowcase = () => {
