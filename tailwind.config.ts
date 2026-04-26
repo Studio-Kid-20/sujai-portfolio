@@ -69,9 +69,9 @@ export default {
         full: "9999px",
       },
       fontFamily: {
-        headline: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
-        body: ["Inter", "system-ui", "sans-serif"],
-        label: ["Manrope", "system-ui", "sans-serif"],
+        headline: ["Playfair Display", "serif"],
+        body: ["Montserrat", "sans-serif"],
+        label: ["Orbitron", "sans-serif"],
       },
       keyframes: {
         spinSlow: {
