@@ -27,9 +27,9 @@ export const InnovationFlow = () => {
             <h3 className="font-headline text-4xl font-black tracking-tighter text-white/90">The <span className="text-primary">Neural</span> Fabric</h3>
           </div>
 
-          {/* SVG Connection Layer - PIXEL PERFECT GEOMETRY */}
+          {/* SVG Connection Layer - OPTIMIZED GEOMETRY */}
           <svg 
-            className="absolute inset-0 h-full w-full pointer-events-none" 
+            className="absolute inset-0 h-full w-full pointer-events-none transform-gpu" 
             viewBox="0 0 1200 850" 
             preserveAspectRatio="xMidYMid meet"
           >
@@ -39,13 +39,6 @@ export const InnovationFlow = () => {
                 <stop offset="50%" stopColor="#b6a0ff" />
                 <stop offset="100%" stopColor="rgba(182, 160, 255, 0)" />
               </linearGradient>
-              <filter id="ultraGlow">
-                <feGaussianBlur stdDeviation="5" result="blur" />
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
-              </filter>
             </defs>
 
             {NODES.map((node, i) => {
@@ -54,40 +47,36 @@ export const InnovationFlow = () => {
               const endX = 600 + node.x;
               const endY = 425 + node.y;
               
-              // Perfect Orthogonal Circuit Path
-              // Start -> Exit Hub -> Vertical Align -> Target
               const hubExitX = node.side === "left" ? startX - 100 : startX + 100;
               const path = `M ${startX} ${startY} L ${hubExitX} ${startY} L ${hubExitX} ${endY} L ${endX} ${endY}`;
 
               return (
                 <g key={node.id}>
-                  {/* Subtle static trace */}
-                  <path d={path} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="1.5" />
+                  <path d={path} fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="1" />
                   
-                  {/* High-Contrast Energy Pulse */}
                   <motion.path
                     d={path}
                     fill="none"
                     stroke="url(#neonPulse)"
-                    strokeWidth="3.5"
-                    strokeDasharray="80 400"
-                    animate={{ strokeDashoffset: [-480, 0] }}
+                    strokeWidth="2.5"
+                    strokeDasharray="60 300"
+                    animate={{ strokeDashoffset: [-360, 0] }}
                     transition={{
-                      duration: 3,
+                      duration: 4,
                       repeat: Infinity,
                       ease: "linear",
-                      delay: i * 0.2
+                      delay: i * 0.3
                     }}
-                    filter="url(#ultraGlow)"
+                    style={{ filter: "drop-shadow(0 0 4px #b6a0ff)" }}
                   />
                   
-                  {/* Connection Nodes */}
-                  <circle cx={startX} cy={startY} r="4.5" fill="#b6a0ff" />
-                  <circle cx={endX} cy={endY} r="4.5" fill="#b6a0ff" />
+                  <circle cx={startX} cy={startY} r="3.5" fill="#b6a0ff" />
+                  <circle cx={endX} cy={endY} r="3.5" fill="#b6a0ff" />
                 </g>
               );
             })}
           </svg>
+
 
           {/* Central Sujai Hub - Perfected Geometry with Hover Blink */}
           <motion.div
