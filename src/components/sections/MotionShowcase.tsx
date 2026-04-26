@@ -49,14 +49,15 @@ export const MotionShowcase = () => {
         </Reveal>
       </div>
 
-      {/* Scroll Hint */}
+      {/* Scroll Hint / Connection Point */}
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20"
       >
-        <div className="h-16 w-[1px] bg-gradient-to-b from-white/40 to-transparent" />
+        <div className="h-40 w-[2px] bg-gradient-to-b from-white/40 to-primary/60 shadow-[0_0_15px_rgba(182,160,255,0.3)]" />
       </motion.div>
     </section>
+
   );
 };
