@@ -5,7 +5,13 @@ export const MotionShowcase = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Video */}
-      <div className="absolute inset-0 z-0">
+      <div 
+        className="absolute inset-0 z-0 overflow-hidden"
+        style={{
+          maskImage: "radial-gradient(circle, black 40%, transparent 90%)",
+          WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 90%)",
+        }}
+      >
         <video
           autoPlay
           loop
@@ -15,6 +21,7 @@ export const MotionShowcase = () => {
         >
           <source src="/assets/video/motion-background.mp4" type="video/mp4" />
         </video>
+
         {/* Cinematic Overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
         <div className="absolute inset-0 bg-background/20 backdrop-blur-[2px]" />
