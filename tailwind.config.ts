@@ -69,9 +69,10 @@ export default {
         full: "9999px",
       },
       fontFamily: {
-        headline: ["Playfair Display", "serif"],
-        body: ["Montserrat", "sans-serif"],
-        label: ["Orbitron", "sans-serif"],
+        headline: ["Syne", "sans-serif"],
+        body: ["Inter", "sans-serif"],
+        label: ["JetBrains Mono", "monospace"],
+        accent: ["Outfit", "sans-serif"],
       },
       keyframes: {
         spinSlow: {

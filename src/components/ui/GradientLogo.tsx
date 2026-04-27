@@ -11,7 +11,7 @@ export function GradientLogo({ className = "" }: GradientLogoProps) {
     <Link
       to="/"
       aria-label={`${SITE_NAV_BRAND}, home`}
-      className={`group flex items-center gap-2.5 font-headline ${className}`.trim()}
+      className={`group flex items-center gap-2.5 font-headline uppercase ${className}`.trim()}
     >
       <img
         src="/favicon.svg"
