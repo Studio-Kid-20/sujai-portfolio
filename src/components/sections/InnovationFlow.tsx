@@ -24,7 +24,7 @@ export const InnovationFlow = () => {
             >
               <span className="font-label text-[10px] font-bold uppercase tracking-[0.4em] text-primary">System Architecture</span>
             </motion.div>
-            <h3 className="font-headline text-4xl font-black tracking-tighter text-white/90">The <span className="text-primary">Neural</span> Fabric</h3>
+            <h3 className="font-headline text-2xl font-black tracking-tighter text-white/90">The <span className="text-primary">Neural</span> Fabric</h3>
           </div>
 
           {/* SVG Connection Layer - OPTIMIZED GEOMETRY */}
@@ -113,8 +113,8 @@ export const InnovationFlow = () => {
             {/* Core Chip - Clean & Solid */}
             <div className="relative flex h-36 w-36 items-center justify-center rounded-[2.5rem] border-2 border-white/10 bg-neutral-950 shadow-[0_0_80px_rgba(182,160,255,0.15)] transition-all group-hover:border-primary/40 group-hover:shadow-[0_0_100px_rgba(182,160,255,0.3)]">
               <div className="flex flex-col items-center">
-                <span className="font-label text-[9px] font-black uppercase tracking-[0.6em] text-primary/80 mb-1">CORE</span>
-                <span className="font-headline text-3xl font-black tracking-tight text-white">SUJAI</span>
+                <span className="font-body text-[7px] font-bold uppercase tracking-[0.5em] text-primary/80 mb-1">CORE</span>
+                <span className="font-headline text-xl font-black tracking-tight text-white">SUJAI</span>
                 <div className="mt-3 flex gap-1.5">
                   {[...Array(3)].map((_, i) => (
                     <motion.div 
@@ -149,7 +149,7 @@ export const InnovationFlow = () => {
                 {/* Internal Glow Effect on Hover */}
                 <div className="absolute inset-0 rounded-[2.5rem] bg-primary/5 opacity-0 transition-opacity group-hover:opacity-100" />
                 
-                <span className="relative z-10 font-label text-[12px] font-black uppercase tracking-[0.2em] text-white">
+                <span className="relative z-10 font-body text-[9px] font-bold uppercase tracking-[0.15em] text-white">
                   {node.label}
                 </span>
                 <div className="relative z-10 mt-2 h-0.5 w-6 rounded-full bg-primary/30 group-hover:bg-primary transition-colors" />

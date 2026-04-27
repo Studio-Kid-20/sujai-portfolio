@@ -34,7 +34,7 @@ export const MotionShowcase = () => {
           </span>
         </Reveal>
         <Reveal direction="up" delay={0.2}>
-          <h2 className="font-headline text-5xl font-extrabold leading-none tracking-tighter text-white md:text-[7rem]">
+          <h2 className="font-headline text-4xl font-extrabold leading-none tracking-tighter text-white md:text-[5rem]">
             VISUAL<br />
             <span className="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">
               STORYTELLING
