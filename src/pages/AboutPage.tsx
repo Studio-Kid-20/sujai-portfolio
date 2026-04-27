@@ -19,7 +19,7 @@ export function AboutPage() {
                 </span>
                 <h1
                   id="about-heading"
-                  className="font-headline text-5xl font-extrabold leading-[1.1] tracking-tight md:text-7xl text-white"
+                  className="font-headline text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl text-white"
                 >
                   From sketchbook lines to browser layers.
                 </h1>

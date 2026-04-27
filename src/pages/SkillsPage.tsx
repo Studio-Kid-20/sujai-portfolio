@@ -7,7 +7,7 @@ export function SkillsPage() {
       <div className="mx-auto max-w-7xl px-8 mb-20">
         <Reveal>
           <div className="space-y-4 text-center md:text-left">
-            <h1 className="font-headline text-5xl font-extrabold text-white md:text-7xl">
+            <h1 className="font-headline text-4xl font-extrabold text-white md:text-5xl">
               Skills Arsenal
             </h1>
             <p className="text-on-surface-variant text-xl max-w-2xl leading-relaxed">

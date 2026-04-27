@@ -43,7 +43,7 @@ export function ContactPage() {
               <span className="font-label text-sm font-bold uppercase tracking-[0.2em] text-secondary">
                 Get In Touch
               </span>
-              <h1 className="font-headline text-5xl font-extrabold leading-tight tracking-tight text-white md:text-8xl">
+              <h1 className="font-headline text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl">
                 Let's build something{" "}
                 <span className="bg-gradient-to-r from-primary to-tertiary bg-clip-text text-transparent">
                   alive

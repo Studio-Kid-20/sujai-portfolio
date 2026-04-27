@@ -14,7 +14,7 @@ export function ProjectsPage() {
           </span>
           <h1
             id="projects-hero-heading"
-            className="mb-6 bg-gradient-to-r from-primary via-tertiary to-secondary bg-clip-text font-headline text-5xl font-extrabold tracking-tighter text-transparent md:text-8xl"
+            className="mb-6 bg-gradient-to-r from-primary via-tertiary to-secondary bg-clip-text font-headline text-4xl font-extrabold tracking-tighter text-transparent md:text-6xl"
           >
             Builds & Milestones.
           </h1>

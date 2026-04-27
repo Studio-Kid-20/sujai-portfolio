@@ -60,7 +60,7 @@ export const HeroUpgraded = () => {
             </span>
             
             <motion.h1
-              className="font-headline text-5xl font-extrabold leading-[1.1] tracking-tighter text-white md:text-8xl"
+              className="font-headline text-4xl font-extrabold leading-[1.1] tracking-tighter text-white md:text-6xl"
               variants={container}
               initial="hidden"
               animate="visible"
