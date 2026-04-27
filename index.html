@@ -5,19 +5,59 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sujai | Vision Into Vector</title>
+
+    <!-- DNS Prefetch — starts DNS resolution early -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+    <!-- Preconnect — establishes TCP + TLS connection before fonts are requested -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload critical font files — tells browser to fetch BEFORE first paint -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@500;700&display=swap"
+    />
+
+    <!-- Font stylesheet with font-display=swap — text always visible, no invisible flash -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&family=JetBrains+Mono:wght@500;700&family=Outfit:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Material Icons -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=block"
       rel="stylesheet"
     />
+
+    <!-- Fallback font metrics — minimises layout shift while Syne loads -->
+    <style>
+      @font-face {
+        font-family: "Syne";
+        font-style: normal;
+        font-weight: 700 800;
+        font-display: swap;
+        src: local("Syne");
+        size-adjust: 100%;
+        ascent-override: 95%;
+        descent-override: 25%;
+        line-gap-override: 0%;
+      }
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400 600;
+        font-display: swap;
+        src: local("Inter"), local("Inter-Regular");
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
