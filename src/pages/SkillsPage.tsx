@@ -1,5 +1,6 @@
 import { SkillsArsenal } from "@/components/sections/SkillsArsenal";
 import { Reveal } from "@/components/ui/Reveal";
+import { SKILLS_HEADING, SKILLS_INTRO } from "@/content/site";
 
 export function SkillsPage() {
   return (
@@ -8,10 +9,10 @@ export function SkillsPage() {
         <Reveal>
           <div className="space-y-4 text-center md:text-left">
             <h1 className="font-headline text-4xl font-extrabold text-white md:text-5xl">
-              Skills Arsenal
+              {SKILLS_HEADING}
             </h1>
             <p className="text-on-surface-variant text-xl max-w-2xl leading-relaxed">
-              A curated collection of tools and technologies I use to bring ideas to life.
+              {SKILLS_INTRO}
             </p>
             <div className="h-1 w-24 bg-gradient-to-r from-primary to-tertiary rounded-full mt-6" />
           </div>

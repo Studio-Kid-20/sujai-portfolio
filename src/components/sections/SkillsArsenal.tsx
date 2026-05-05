@@ -1,4 +1,4 @@
-import type { SkillCategory } from "@/content/types";
+import type { SkillCategory } from "@/types";
 import { skillCategories } from "@/content/projects";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { MaterialIcon } from "@/components/ui/MaterialIcon";

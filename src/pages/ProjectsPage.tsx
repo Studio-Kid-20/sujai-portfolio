@@ -1,4 +1,4 @@
-import { PAGE_TAGLINE_BY_PATH } from "@/content/site";
+import { PAGE_TAGLINE_BY_PATH, PROJECTS_HEADING, PROJECTS_TAGLINE } from "@/content/site";
 import { devProjects } from "@/content/projects";
 import { ProjectDevCard } from "@/components/sections/ProjectDevCard";
 import { VisualExplorationsBento } from "@/components/sections/VisualExplorationsBento";
@@ -10,13 +10,13 @@ export function ProjectsPage() {
       <section className="mb-24" aria-labelledby="projects-hero-heading">
         <Reveal>
           <span className="mb-4 block font-label text-sm font-bold uppercase tracking-[0.2em] text-secondary">
-            Build Archive
+            {PROJECTS_TAGLINE}
           </span>
           <h1
             id="projects-hero-heading"
             className="mb-6 bg-gradient-to-r from-primary via-tertiary to-secondary bg-clip-text font-headline text-4xl font-extrabold tracking-tighter text-transparent md:text-6xl"
           >
-            Builds & Milestones.
+            {PROJECTS_HEADING}
           </h1>
           <p className="max-w-2xl text-xl leading-relaxed text-on-surface-variant">
             {PAGE_TAGLINE_BY_PATH["/projects"]}

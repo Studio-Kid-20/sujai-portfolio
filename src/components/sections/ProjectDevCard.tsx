@@ -1,4 +1,4 @@
-import type { Project } from "@/content/types";
+import type { Project } from "@/types";
 import { MaterialIcon } from "@/components/ui/MaterialIcon";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { motion } from "framer-motion";

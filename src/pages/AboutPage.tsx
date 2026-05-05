@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ABOUT_HIGHLIGHTS, ABOUT_STORY, EXPERIENCE_HIGHLIGHT } from "@/content/site";
+import { ABOUT_HIGHLIGHTS, ABOUT_STORY, EXPERIENCE_HIGHLIGHT, ABOUT_TAGLINE, ABOUT_HEADING } from "@/content/site";
 import { Reveal } from "@/components/ui/Reveal";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { MaterialIcon } from "@/components/ui/MaterialIcon";
@@ -15,13 +15,13 @@ export function AboutPage() {
             <Reveal direction="right">
               <div className="space-y-4">
                 <span className="font-label text-sm font-bold uppercase tracking-[0.2em] text-secondary">
-                  The Story Behind The Build
+                  {ABOUT_TAGLINE}
                 </span>
                 <h1
                   id="about-heading"
                   className="font-headline text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl text-white"
                 >
-                  From sketchbook lines to browser layers.
+                  {ABOUT_HEADING}
                 </h1>
               </div>
             </Reveal>

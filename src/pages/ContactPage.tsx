@@ -3,11 +3,10 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 
-import { CONTACT_INTRO, contactMeta, socialLinks } from "@/content/site";
+import { CONTACT_INTRO, contactMeta, socialLinks, CONTACT_HEADING, CONTACT_TAGLINE, CONTACT_SUBJECT_OPTIONS } from "@/content/site";
 import { submitContactForm } from "@/lib/contactSubmit";
 import {
   contactFormSchema,
-  contactSubjectOptions,
   type ContactFormValues,
 } from "@/lib/schemas/contact";
 import { MaterialIcon } from "@/components/ui/MaterialIcon";
@@ -41,7 +40,7 @@ export function ContactPage() {
           <Reveal direction="right">
             <div className="space-y-6">
               <span className="font-label text-sm font-bold uppercase tracking-[0.2em] text-secondary">
-                Get In Touch
+                {CONTACT_TAGLINE}
               </span>
               <h1 className="font-headline text-4xl font-extrabold leading-tight tracking-tight text-white md:text-6xl">
                 Let's build something{" "}
@@ -151,7 +150,7 @@ export function ContactPage() {
                     className="w-full appearance-none rounded-2xl border border-white/10 bg-white/5 px-5 py-5 text-white transition-all focus:border-primary focus:bg-white/10 focus:ring-0"
                     {...register("subject")}
                   >
-                    {contactSubjectOptions.map((opt) => (
+                    {CONTACT_SUBJECT_OPTIONS.map((opt) => (
                       <option key={opt} value={opt} className="bg-surface">
                         {opt}
                       </option>

@@ -47,3 +47,11 @@ export type SkillCategory = {
   bars?: SkillBar[];
   tools?: { name: string; icon: string }[];
 };
+
+export type InnovationNode = {
+  id: string;
+  label: string;
+  x: number;
+  y: number;
+  side: "left" | "right";
+};

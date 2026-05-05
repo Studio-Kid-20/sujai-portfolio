@@ -1,4 +1,4 @@
-import type { NavItem, SocialLink } from "./types.js";
+import type { NavItem, SocialLink } from "@/types";
 
 export const SITE_NAME = "Sujai";
 /** All-caps wordmark in the site header / navbar. */
@@ -23,6 +23,8 @@ export const HOME_SKILL_PILLS = [
   "AI-leveraged development",
 ];
 
+export const ABOUT_TAGLINE = "The Story Behind The Build";
+export const ABOUT_HEADING = "From sketchbook lines to browser layers.";
 export const ABOUT_STORY =
   "I don't believe in 'impossible' tasks. My journey started with a pencil and paper, drawing imagery from my mind. Now, I use the browser as my canvas. Currently navigating the 11th-grade CBSE curriculum while building my own brand, I focus on turning ambitious ideas into interfaces that feel bold, polished, and alive.";
 
@@ -38,6 +40,17 @@ export const EXPERIENCE_HIGHLIGHT = {
     "Designed and built a platform dedicated to buying and selling source code. My first major full-scale deployment.",
 };
 
+export const SKILLS_HEADING = "Skills Arsenal";
+export const SKILLS_INTRO = "A curated collection of tools and technologies I use to bring ideas to life.";
+
+export const PROJECTS_HEADING = "Builds & Milestones.";
+export const PROJECTS_TAGLINE = "Build Archive";
+
+export const DESIGNS_HEADING = "Interface Atmospheres";
+export const DESIGNS_TAGLINE = "Visual Lab";
+
+export const CONTACT_HEADING = "Let's build something alive together.";
+export const CONTACT_TAGLINE = "Get In Touch";
 export const CONTACT_INTRO =
   "If you have a build, redesign, concept, or collaboration in mind, I'd love to hear about it. I am especially drawn to projects that need both visual energy and clean front-end execution.";
 
@@ -107,3 +120,11 @@ export const contactMeta = {
 };
 
 export const copyrightLine = "© 2026 Sujai. Built with React, TypeScript, and Tailwind.";
+
+export const CONTACT_SUBJECT_OPTIONS = [
+  "Project Inquiry",
+  "General Freelance",
+  "Collaboration",
+  "Just Saying Hi",
+] as const;
+

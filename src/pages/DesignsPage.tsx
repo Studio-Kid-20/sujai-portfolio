@@ -1,4 +1,4 @@
-import { PAGE_TAGLINE_BY_PATH } from "@/content/site";
+import { PAGE_TAGLINE_BY_PATH, DESIGNS_HEADING, DESIGNS_TAGLINE } from "@/content/site";
 import { designTiles } from "@/content/projects";
 
 export function DesignsPage() {
@@ -6,13 +6,13 @@ export function DesignsPage() {
     <main className="mx-auto max-w-7xl px-6 pb-12">
       <section className="mb-12" aria-labelledby="designs-heading">
         <span className="mb-4 block font-label text-sm font-bold uppercase tracking-[0.2em] text-tertiary">
-          Visual Lab
+          {DESIGNS_TAGLINE}
         </span>
         <h1
           id="designs-heading"
           className="mb-4 font-headline text-4xl font-extrabold text-white md:text-5xl light:text-slate-900"
         >
-          Interface Atmospheres
+          {DESIGNS_HEADING}
         </h1>
         <p className="max-w-2xl text-lg leading-relaxed text-on-surface-variant light:text-slate-600">
           {PAGE_TAGLINE_BY_PATH["/designs"]}
