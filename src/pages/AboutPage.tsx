@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { ABOUT_HIGHLIGHTS, ABOUT_STORY, EXPERIENCE_HIGHLIGHT, ABOUT_TAGLINE, ABOUT_HEADING } from "@/content/site";
+import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { TiltCard } from "@/components/ui/TiltCard";
 import { MaterialIcon } from "@/components/ui/MaterialIcon";
+import { ABOUT_PAGE_COPY } from "@/data/pages/about";
 
 const workspaceImg = "/assets/about-studio.jpg";
 
@@ -13,27 +14,23 @@ export function AboutPage() {
         <div className="flex flex-col items-center gap-16 lg:flex-row">
           <div className="w-full space-y-8 lg:w-1/2">
             <Reveal direction="right">
-              <div className="space-y-4">
-                <span className="font-label text-sm font-bold uppercase tracking-[0.2em] text-secondary">
-                  {ABOUT_TAGLINE}
-                </span>
-                <h1
-                  id="about-heading"
-                  className="font-headline text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl text-white"
-                >
-                  {ABOUT_HEADING}
-                </h1>
-              </div>
+              <SectionHeading
+                as="h1"
+                titleId="about-heading"
+                eyebrow={ABOUT_PAGE_COPY.eyebrow}
+                title={ABOUT_PAGE_COPY.title}
+                titleClassName="md:text-5xl"
+              />
             </Reveal>
             
             <Reveal direction="right" delay={0.4}>
               <p className="max-w-xl font-body text-xl leading-relaxed text-on-surface-variant">
-                {ABOUT_STORY}
+                {ABOUT_PAGE_COPY.story}
               </p>
             </Reveal>
 
             <div className="grid gap-4">
-              {ABOUT_HIGHLIGHTS.map((highlight, i) => (
+              {ABOUT_PAGE_COPY.highlights.map((highlight, i) => (
                 <Reveal key={highlight} direction="right" delay={0.5 + i * 0.1}>
                   <div className="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 text-sm text-on-surface-variant backdrop-blur-md">
                     {highlight}
@@ -48,11 +45,11 @@ export function AboutPage() {
                    <MaterialIcon name="auto_awesome" className="text-4xl text-secondary" />
                 </div>
                 <p className="font-label text-xs uppercase tracking-[0.2em] text-secondary">Milestone</p>
-                <h2 className="mt-3 font-headline text-2xl font-bold text-white">
-                  {EXPERIENCE_HIGHLIGHT.milestone}
+                <h2 className="title-gradient mt-3 font-headline text-2xl font-bold">
+                  {ABOUT_PAGE_COPY.milestone.title}
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
-                  {EXPERIENCE_HIGHLIGHT.description}
+                  {ABOUT_PAGE_COPY.milestone.description}
                 </p>
               </div>
             </Reveal>
@@ -95,5 +92,3 @@ export function AboutPage() {
     </main>
   );
 }
-
-
